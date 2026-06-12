@@ -240,7 +240,7 @@
 
     .emotion-card.happy { background: #FFD700; color: #7A5C00; }
     .emotion-card.sad   { background: #4A90D9; color: #fff; }
-    .emotion-card.angry { background: #E74C3C; color: #fff; }
+    .emotion-card.mad { background: #E74C3C; color: #fff; }
     .emotion-card.tired { background: #9B59B6; color: #fff; }
     .emotion-card.sick  { background: #27AE60; color: #fff; }
 
@@ -421,8 +421,8 @@
     <button class="emotion-card sad" onclick="selectEmotion('sad')">
       <span class="card-emoji">😢</span><span class="card-label">Sad</span>
     </button>
-    <button class="emotion-card angry" onclick="selectEmotion('angry')">
-      <span class="card-emoji">😠</span><span class="card-label">Angry</span>
+    <button class="emotion-card mad" onclick="selectEmotion('mad')">
+      <span class="card-emoji">😠</span><span class="card-label">mad</span>
     </button>
   </div>
   <div class="emotion-grid-bottom">
@@ -558,8 +558,8 @@ const EMOTIONS = {
     bg: '#4A90D9', fg: '#ffffff',
     needs: ['hug', 'talk now', 'bedroom', 'alone time'],
   },
-  angry: {
-    label: 'angry', emoji: '😠',
+  mad: {
+    label: 'mad', emoji: '😠',
     bg: '#E74C3C', fg: '#ffffff',
     needs: ['bedroom', 'alone time', 'talk later'],
   },
